@@ -75,6 +75,9 @@ nav {
     left: 0;
     transition-duration: .5s;
 }
+.nav-wrapper li a:visited::after {
+    width: 100%;
+}
 
 
 #landing {
@@ -128,6 +131,18 @@ nav {
 .goals li:first-child {
     font-size: 22px;
     margin-bottom: 10px;
+}
+
+.goals li:nth-child(even) {
+    background: rgb(245, 245, 245);
+}
+
+.goals li:last-child::after {
+    display: block;
+    content: 'Fler mål kommer...';
+    font-size: 12px;
+    background: #fff;
+    padding-top: 24px;
 }
 
 .goals li::before {
